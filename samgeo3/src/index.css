@@ -8,3 +8,14 @@ html,body{
 body,button,input,textarea{
   font-family:'Poppins',Verdana, Geneva, Tahoma, sans-serif;
 }
+button,input,textarea{
+  border:none;
+  outline:none;
+}
+.wholepagediv{
+  display:flex;
+  height:100vh;
+}
+.wholecontentsdiv{
+  width:90%;
+}
