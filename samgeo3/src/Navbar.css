@@ -26,7 +26,9 @@
 }
 .sectionlinkdiv .i{
     font-size: x-large;
-   
+}
+.sectionlinkdiv .i:hover{
+    font-size: xx-large;
 }
 .copyrightdiv{
     display:flex;

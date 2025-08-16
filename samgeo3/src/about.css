@@ -1,0 +1,85 @@
+.aboutsectiondiv{
+    text-align: center;
+    margin:0% 6%;
+}
+.abouthead{
+  color:lightgray;
+}
+.aboutdiv{
+  display:flex;
+  justify-content: center;
+  height:80vh;
+  overflow:hidden;
+  align-items:center;
+}
+.aboutimgdiv{
+  width:100%;
+  height:80vh;
+  display: flex;
+  overflow:hidden;
+  justify-content: center;
+  align-items: center;
+}
+.aboutimgdiv img{
+  border-radius: 10px;
+  height:100%;
+  background-color:whitesmoke;
+}
+.aboutcontentdiv{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  height:80vh;
+  overflow:hidden;
+  width:100%;
+}
+.aboutcontentdiv #introcontents,
+.aboutcontentdiv #educationcontents{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  height:100%;
+  text-align: left;
+  width:100%;
+  flex-direction: column;
+}
+.aboutoptiondiv{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+}
+.aboutoptiondiv button{
+  width:100%;
+  color:black;
+  padding:2%;
+  background:white;
+}
+.switchbtn{
+  font-weight:bold;
+  border-width:3px;
+  border-image: linear-gradient(135deg,blueviolet,violet) 1;
+  border-bottom-style:solid;
+}
+.aboutcontentdiv h1{
+  line-height: 0%;
+}
+.aboutcontentdiv h1 span{
+  background:linear-gradient(135deg,blueviolet,violet);
+  background-clip:text;
+  color:transparent;
+}
+.aboutcontentdiv p{
+  color:dimgray;
+}
+.aboutcontentdiv .hirebtn{
+    font-size:15px;
+    padding:3%;
+    width:30%;
+    text-align:center;
+    text-decoration:none;
+    border-radius:8px;
+    background:linear-gradient(135deg,blueviolet,violet);
+    box-shadow:0px 0px 1px rgba(0,0,0,0.9);
+    color:white;
+}

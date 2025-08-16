@@ -1,7 +1,9 @@
 import React,{ useState } from 'react'
 import { Routes,Route } from 'react-router-dom'
-import Home from './Home.jsx' 
 import Navbar from './Navbar.jsx'
+import Home from './Home.jsx'
+import About from './about.jsx'
+import Skill from './skill.jsx'
 
 function App() {
   return (
@@ -14,6 +16,12 @@ function App() {
     <Routes>
     <Route path='/' element={
       <Home/>
+    }/>
+    <Route path='/about' element={
+      <About/>
+    }/>
+    <Route path='/skill' element={
+      <Skill/>
     }/>
     </Routes>
     </div>

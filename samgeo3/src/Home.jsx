@@ -14,12 +14,12 @@ function Home() {
       <div className="introdiv">
         <h1>Hi, I'm <span className='name'>Samuel George</span><br></br><span className='p'>MERN stack Developer</span></h1>
         <p>I love turning creative ideas into functional online experiences using modern web technologies</p>
-        <a href={resume} download><button>Resume <FontAwesomeIcon icon={faDownload}/></button></a>
         <div className="socialdiv">
            <a href="https://linkedin.com/in/samuel-george-j004"><FontAwesomeIcon className='i' icon={faLinkedinIn}/></a>
            <a href="https://github.com/samgeo12345"><FontAwesomeIcon className='i' icon={faGithub}/></a>
            <a href="https://api.whatsapp.com/send/?phone=%2B919566033767&text&type=phone_number&app_absent=0"><FontAwesomeIcon className='i' icon={faWhatsapp}/></a>
         </div>
+        <a href={resume} className='button' download>Resume <FontAwesomeIcon icon={faDownload}/></a>
       </div>
       <div className="introimgdiv">
         <img src={samuelogo} alt="" />
