@@ -43,6 +43,30 @@
   width:100%;
   flex-direction: column;
 }
+.aboutcontentdiv #educationcontents{
+  gap:0px;
+  justify-content:space-evenly;
+  overflow-y: scroll;
+}
+#educationcontents .educations p:nth-child(3){
+  background:whitesmoke;
+  text-align:center;
+  width:30%;
+  font-size:small;
+  border-radius:5px;
+}
+.aboutcontentdiv #educationcontents::-webkit-scrollbar {
+  width: 5px;
+}
+
+.aboutcontentdiv #educationcontents::-webkit-scrollbar-track {
+  border-radius:10px;
+}
+
+.aboutcontentdiv #educationcontents::-webkit-scrollbar-thumb {
+  background:darkgray;
+  border-radius:10px;
+}
 .aboutoptiondiv{
   display:flex;
   justify-content: center;
@@ -56,15 +80,14 @@
   background:white;
 }
 .switchbtn{
+  background:whitesmoke !important;
+  border-radius:8px;
   font-weight:bold;
-  border-width:3px;
-  border-image: linear-gradient(135deg,blueviolet,violet) 1;
-  border-bottom-style:solid;
 }
 .aboutcontentdiv h1{
   line-height: 0%;
 }
-.aboutcontentdiv h1 span{
+.aboutcontentdiv h1 span,.aboutcontentdiv h3 span{
   background:linear-gradient(135deg,blueviolet,violet);
   background-clip:text;
   color:transparent;

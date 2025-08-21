@@ -29,7 +29,30 @@ function About() {
             )}
             {active==="education" && (
             <div id="educationcontents">
-              <p>I studied in abc school.</p>
+              <div className="educations" style={{marginTop:"5%"}}>
+                <h3><span>SSLC Standard</span></h3>
+                <p>Christuraja Matriculation Higher Secondary School</p>
+                <p>Marthandam</p>
+                <p>2019 - 2020</p>
+              </div>
+              <div className="educations">
+                <h3><span>HSC Standard</span></h3>
+                <p>Christuraja Matriculation Higher Secondary School</p>
+                <p>Marthandam</p>
+                <p>2021 - 2022</p>
+              </div>
+              <div className="educations">
+                <h3><span>Diploma in Python</span></h3>
+                <p>CADD Center Private Limited</p>
+                <p>Marthandam</p>
+                <p>2022 (3 months)</p>
+              </div>
+              <div className="educations">
+                <h3><span>B.E Computer Science</span></h3>
+                <p>Ponjesly College of Engineering</p>
+                <p>Nagercoil</p>
+                <p>2022 - 2026</p>
+              </div>
             </div>
             )}
           </div>

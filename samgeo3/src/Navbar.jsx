@@ -3,14 +3,14 @@ import {Link,useLocation} from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBell, faCircleQuestion, faFolder, faGem, faHome, faIdBadge } from '@fortawesome/free-regular-svg-icons'
 import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons'
-import logo from './assets/Untitled.png'
+import logo from './assets/Untitled-removebg-preview (1).png'
 import './Navbar.css'
 
 function Navbar() {
   const location=useLocation();
   const secoptions= (path) => ({
      fontSize: location.pathname=== path ? "xx-large" : "",
-     color: location.pathname === path ? "blueviolet" : "dimgray",
+     color: location.pathname === path ? "orchid" : "dimgray",
      transition:".3s"
   });
 
