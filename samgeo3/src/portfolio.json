@@ -1,0 +1,138 @@
+{
+    "education":[
+        {
+            "id":1,
+            "institution":"Christuraja Matriculation Higher Seciondary School",
+            "course":"SSLC Standard",
+            "place":"Marthandam",
+            "year":"2019 - 2020"
+        },
+        {
+            "id":2,
+            "institution":"Christuraja Matriculation Higher Seciondary School",
+            "course":"HSC Standard",
+            "place":"Marthandam",
+            "year":"2021 - 2022"
+        },
+        {
+            "id":3,
+            "institution":"CADD Center Private Limited",
+            "course":"Diploma in Python",
+            "place":"Marthandam",
+            "year":"2022 (3 months)"
+        },
+        {
+            "id":4,
+            "institution":"Ponjesly College of Engineering",
+            "course":"B.E Computer Science",
+            "place":"Nagercoil",
+            "year":"2022 - 2026"
+        }
+    ],
+    "skill":[
+        {
+            "id":1,
+            "icons":"html",
+            "percentage":90,
+            "color":"orangered"
+        },
+        {
+            "id":2,
+            "icons":"css",
+            "percentage":80,
+            "color":"dodgerblue"
+        },
+        {
+            "id":3,
+            "icons":"js",
+            "percentage":65,
+            "color":"gold"
+        },
+        {
+            "id":4,
+            "icons":"react",
+            "percentage":65,
+            "color":"deepskyblue"
+        },
+        {
+            "id":5,
+            "icons":"python",
+            "percentage":70,
+            "color":"blue"
+        },
+        {
+            "id":6,
+            "icons":"react",
+            "percentage":65,
+            "color":"deepskyblue"
+        },
+        {
+            "id":7,
+            "icons":"java",
+            "percentage":60,
+            "color":"orangered"
+        }
+    ],
+    "skillimg":[
+        {
+            "id":1,
+            "img":"./image copy 2.png",
+            "percentage":60
+        },
+        {
+            "id":2,
+            "img":"./image copy 3.png",
+            "percentage":0
+        }
+    ],
+    "experience":[
+        {
+            "id":1,
+            "image":"./image.png",
+            "intern":"React Intern",
+            "company":"Srishti Innovative",
+            "date":"July 2025 (1 month)",
+            "venue":"Technopark",
+            "page":"https://www.linkedin.com/company/srishti-innovative/posts/?feedView=all"
+        },
+        {
+            "id":2,
+            "image":"./image copy.png",
+            "intern":"Datascience Intern",
+            "company":"Jclick Solutions",
+            "date":"Feb 2025 (1 month)",
+            "venue":"Nagercoil",
+            "page":"https://www.linkedin.com/company/jclicksolutions/posts/?feedView=all"
+        }
+    ],
+    "certification":[
+        {
+            "id":1,
+            "certificate":"./Screenshot (446).png"
+        },
+        {
+            "id":2,
+            "certificate":"./Screenshot (323).png"
+        },
+        {
+            "id":3,
+            "certificate":"./Screenshot (344).png"
+        },
+        {
+            "id":4,
+            "certificate":"./Screenshot (345).png"
+        },
+        {
+            "id":5,
+            "certificate":"./Screenshot (303).png"
+        },
+        {
+            "id":6,
+            "certificate":"./Screenshot (447).jpg"
+        },
+        {
+            "id":7,
+            "certificate":"./Screenshot (448).jpg"
+        }
+    ]
+}

@@ -4,6 +4,7 @@ import Navbar from './Navbar.jsx'
 import Home from './Home.jsx'
 import About from './about.jsx'
 import Skill from './skill.jsx'
+import Service from './service.jsx'
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
     }/>
     <Route path='/skill' element={
       <Skill/>
+    }/>
+    <Route path='/service' element={
+      <Service/>
     }/>
     </Routes>
     </div>

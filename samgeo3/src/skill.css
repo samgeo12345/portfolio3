@@ -14,6 +14,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom:2%;
 }
 .skillsetoptionsdiv button{
   width:100%;
@@ -31,7 +32,7 @@
   height:73vh;
 }
 .skillexpcerdiv::-webkit-scrollbar {
-  width: 5px;
+  width: 3px;
 }
 
 .skillexpcerdiv::-webkit-scrollbar-track {
@@ -39,67 +40,137 @@
 }
 
 .skillexpcerdiv::-webkit-scrollbar-thumb {
-  background:darkgray;
+  background:lightgray;
   border-radius:10px;
 }
 .skillexpcerdiv #skilldiv{
   display: grid;
   grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
   height:100vh;
-  margin:4% 0%;
+  margin:3% 0.5%;
   gap:15px;
 }
 .skillexpcerdiv #skilldiv .skillss{
   position:relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content:space-between;
   align-items: center;
   overflow:hidden;
   border-radius:10px;
+  background:linear-gradient(135deg,white,whitesmoke);
 }
 .skillss .i{
   font-size:50px;
 }
-.skillss h1 span{
-  font-size:small;
+.skillss span{
+  background:linear-gradient(135deg,blueviolet,violet);
+  background-clip:text;
+  color:transparent;
+  font-weight:bold;
 }
 .skillss hr{
-  position:absolute;
-  left:0;
-  bottom:-5%;
+  margin-left:0;
+  margin-bottom:0;
   border:4px solid;
+  border-image:linear-gradient(135deg,blueviolet,violet) 1;
+}
+
+#experiencediv{
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  width:100%;
+  height:100vh;
+}
+#experiencediv .srisclickdiv{
+  width:100%;
+  display:flex;
+  justify-content:left;
+  align-items:center;
+}
+.srisclickdiv div{
+  padding:5%;
+}
+.srisclickimgdiv{
+  background:linear-gradient(135deg,white,whitesmoke);
+  border-radius:10px;
+  display:flex;
+  justify-content:center ;
+  align-items: center;
+  overflow:hidden;
+}
+.srisclickcontentdiv{
+  display:flex;
+  flex-direction:column;
+  text-align:left;
+  color:gray;
+}
+.srisclickcontentdiv h1{
+  color:black;
+}
+.srisclickcontentdiv p{
+  margin-top:-2%;
+}
+.srisclickcontentdiv span{
+  text-align: center;
+  width:30%;
+}
+.srisclickcontentdiv a{
+  text-decoration: none;
+  font-size:20px;
+  color:blueviolet;
+}
+.srisclickcontentdiv h1 span{
+  color:transparent;
+  background:linear-gradient(135deg,blueviolet,violet);
+  background-clip: text;
+}
+.place{
+  padding:0.1% 4%;
+  border-radius:5px;
+  font-size:small;
+  background-color:whitesmoke;
+}
+#certificationdiv{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  height:100vh;
+  margin:3% 0.5%;
+  gap:15px;
+}
+.certimgdiv{
+  overflow:hidden;
+}
+.certimgdiv img{
   width:100%;
 }
-.skillss .hr-htmlbar{
-  border-image:linear-gradient(135deg,blueviolet,violet) 1;
-  width:90%;
+
+@media(max-width:750px){
+  .skillexpcerdiv{
+    height:60vh;
+  }
+  .skillsetoptionsdiv button{
+    padding:2%;
+  }
 }
-.skillss .hr-cssbar{
-  border-image:linear-gradient(135deg,blueviolet,violet) 1;
-  width:80%;
+@media(max-width:600px){
+  .skillss{
+    height:25vh;
+  }
+  #experiencediv .srisclickdiv{
+    flex-wrap:wrap;
+  }
+  #experiencediv{
+    justify-content:space-evenly;
+  }
+  .srisclickimgdiv{
+    margin-top:10%;
+    width:90%;
+  }
 }
-.skillss .hr-jsbar{
-  border-image:linear-gradient(135deg,blueviolet,violet) 1;
-  width:65%;
-}
-.skillss .hr-reactbar{
-  border-image:linear-gradient(135deg,blueviolet,violet) 1;
-  width:65%;
-}
-.skillss .hr-gimpbar{
-  border-image:linear-gradient(135deg,blueviolet,violet) 1;
-  width:75%;
-}
-.skillss .hr-pythonbar{
-  border-image:linear-gradient(135deg,blueviolet,violet) 1;
-  width:70%;
-}
-.skillss .hr-cbar{
-  border-image:linear-gradient(135deg,blueviolet,violet) 1;
-  width:70%;
-}
-.skillss .hr-javabar{
-  border-image:linear-gradient(135deg,blueviolet,violet) 1;
-  width:60%;
+@media(max-width:500px){
+  .skillexpcerdiv{
+    height:70vh;
+  }
 }

@@ -19,3 +19,12 @@ button,input,textarea{
 .wholecontentsdiv{
   width:90%;
 }
+@media(max-width:750px){
+   .wholepagediv{
+      flex-direction:column-reverse;
+      height:auto;
+   }
+   .wholecontentsdiv{
+      width:100%;
+   }
+}

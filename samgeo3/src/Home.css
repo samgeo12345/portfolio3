@@ -45,7 +45,7 @@
 }
 .socialdiv .i{
     font-size:x-large;
-    color:gray;
+    color:black;
 }
 .introimgdiv{
     height:100vh;
@@ -57,4 +57,35 @@
 }
 .introimgdiv img{
     width:100%;
+}
+
+@media(max-width:750px){
+    .homesection{
+        flex-direction:column;
+        height:90vh;
+    }
+    .introdiv{
+        align-items:center;
+        text-align:center;
+    }
+    .introdiv h1{
+        font-size:xx-large;
+    }
+    .introimgdiv{
+        display:none;
+    }
+    .introdiv .button{
+        font-size:20px;
+    }
+    .socialdiv .i{
+        font-size:xx-large;
+    }
+}
+@media(max-width:500px){
+    .introdiv .button{
+        padding:4%;
+        width:50%;
+        margin-top:6%;
+        font-size:20px;
+    }
 }

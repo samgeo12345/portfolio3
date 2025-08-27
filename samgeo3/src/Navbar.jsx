@@ -16,7 +16,7 @@ function Navbar() {
 
   return (
     <>
-    <nav >
+    <nav>
       <div className="imgdiv">
         <br />
       <img src={logo} alt="Logo" />

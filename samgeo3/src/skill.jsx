@@ -1,11 +1,21 @@
 import React,{useState} from 'react'
+import portfolio from './portfolio.json'
 import './skill.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faC, faLocationArrow, faPaintBrush } from '@fortawesome/free-solid-svg-icons'
+import { faArrowUpRightFromSquare, faC, faLocationArrow, faPaintBrush } from '@fortawesome/free-solid-svg-icons'
 import { faCss3, faHtml5, faJava, faJs, faPython, faReact } from '@fortawesome/free-brands-svg-icons'
 
 function Skill() {
   const [SkillOption,setSkillOption]=useState("skills");
+  const iconMap={
+    html:faHtml5,
+    css:faCss3,
+    js:faJs,
+    react:faReact,
+    python:faPython,
+    java:faJava,
+    c:faC
+  }
 
   return (
     <>
@@ -20,56 +30,50 @@ function Skill() {
           <div className="skillexpcerdiv">
             {SkillOption==="skills" && (
               <div id="skilldiv">
+                {portfolio.skill.map((skl)=>(
                 <div className="skillss">
-                  <FontAwesomeIcon className='i' icon={faHtml5}/>
-                  HTML5
-                  <hr className='hr-htmlbar' />
+                  <h1></h1>
+                  <FontAwesomeIcon className='i' style={{color:skl.color}} icon={iconMap[skl.icons]}/>
+                  <span>{skl.percentage}%</span>
+                  <hr style={{width:skl.percentage + "%"}} />
                 </div>
+                ))}
+                {portfolio.skillimg.map((sklimg)=>(
                 <div className="skillss">
-                  <FontAwesomeIcon className='i' icon={faCss3}/>
-                  CSS3
-                  <hr className='hr-cssbar' />
+                  <h1></h1>
+                  <img className='gimpimg' src={sklimg.img} alt="" />
+                  <span>{sklimg.percentage}%</span>
+                  <hr style={{width:sklimg.percentage + "%"}} />
                 </div>
-                <div className="skillss">
-                  <FontAwesomeIcon className='i' icon={faJs}/>
-                  JavaScript
-                  <hr className='hr-jsbar' />
-                </div>
-                <div className="skillss">
-                  <FontAwesomeIcon className='i' icon={faReact}/>
-                  ReactJS
-                  <hr className='hr-reactbar' />
-                </div>
-                <div className="skillss">
-                  <FontAwesomeIcon className='i' icon={faPaintBrush}/>
-                  GIMP
-                  <hr className='hr-gimpbar' />
-                </div>
-                <div className="skillss">
-                  <FontAwesomeIcon className='i' icon={faPython}/>
-                  Python
-                  <hr className='hr-pythonbar' />
-                </div>
-                <div className="skillss">
-                  <FontAwesomeIcon className='i' icon={faC}/>
-                  C
-                  <hr className='hr-cbar' />
-                </div>
-                <div className="skillss">
-                  <FontAwesomeIcon className='i' icon={faJava}/>
-                  Java
-                  <hr className='hr-javabar' />
-                </div>
+                ))}
               </div>
             )}
             {SkillOption==="experiences" && (
               <div id="experiencediv">
-                <h1>experience</h1>
+                {portfolio.experience.map((exp)=>(
+                <div className="srisclickdiv">
+                  <div className="srisclickimgdiv">
+                    <img src={exp.image} alt={exp.company} />
+                  </div>
+                  <div className="srisclickcontentdiv">
+                    <h1><span>{exp.intern}</span> - {exp.company}</h1>
+                    <p>{exp.date}</p>
+                    <span className='place'>{exp.venue}</span><br />
+                    <a href={exp.page}><FontAwesomeIcon icon={faArrowUpRightFromSquare}/> visit</a>
+                  </div>
+                </div>
+                ))}
               </div>
             )}
             {SkillOption==="certifications" && (
               <div id="certificationdiv">
-                <h1>certification</h1>
+                {portfolio.certification.map((cert)=>(
+                <div className="certificate">
+                  <div className="certimgdiv">
+                    <img src={cert.certificate} alt="" />
+                  </div>
+                </div>
+                ))}
               </div>
             )}
           </div>
