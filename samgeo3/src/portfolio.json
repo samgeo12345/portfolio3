@@ -134,5 +134,53 @@
             "id":7,
             "certificate":"./Screenshot (448).jpg"
         }
+    ],
+    "services":[
+        {
+            "id":1,
+            "icons":"chart",
+            "servicename":"Web Development",
+            "description":"I build responsive and modern websites tailored to your needs. With clean design and smooth functionality, I create professional solutions that enhance your online presence and engage your audience"
+        },
+        {
+            "id":2,
+            "icons":"pencil",
+            "servicename":"Logo Design",
+            "description":"I design creative and memorable logos that reflect your brand’s identity. Each design is simple, unique, and impactful, helping your business stand out with a strong and lasting impression"
+        },
+        {
+            "id":3,
+            "icons":"chart",
+            "servicename":"Data Analyst",
+            "description":"I analyze and interpret data to uncover meaningful insights. From organizing raw data to creating clear reports, I help businesses make smarter decisions with data-driven strategies"
+        },
+        {
+            "id":4,
+            "icons":"palette",
+            "servicename":"Artist",
+            "description":"I create unique and expressive artworks that bring ideas to life. With creativity and attention to detail, I design visuals that capture emotions and add a personal touch to every project"
+        }
+    ],
+    "projects":[
+        {
+            "id":1,
+            "proimage":"./Screenshot (447).png",
+            "prodetails":"A food ordering website built for Resta Hotel to make browsing and ordering dishes simple. Features a clean design focused on ease of use for customers"
+        },
+        {
+            "id":2,
+            "proimage":"./Screenshot (379).png",
+            "prodetails":"A portfolio website with a light and dark theme switcher. Provides an interactive way to explore my skills and projects."
+        },
+        {
+            "id":5,
+            "proimage":"./Screenshot (305).png",
+            "prodetails":"A basic calculator built to perform simple arithmetic operations. Features a clean design with an option to clear digits one by one"
+        },
+        {
+            "id":6,
+            "proimage":"./Screenshot (306).png",
+            "prodetails":"A personal portfolio website showcasing my skills, projects, and journey as a web developer. Designed with a clean and simple layout for easy navigation"
+        }
     ]
 }

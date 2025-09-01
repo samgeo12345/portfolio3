@@ -1,7 +1,70 @@
 .servicesectiondiv{
-    text-align:center;
     margin:0% 6%;
 }
 .servicehead{
+    text-align:center;
+}
+.servicehead{
     color:lightgray;
+}
+.servicediv{
+    overflow-y:scroll;
+    height:85vh;
+}
+.servicesetdiv{
+    display:flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+}
+.servicediv::-webkit-scrollbar {
+  width: 3px;
+}
+
+.servicediv::-webkit-scrollbar-track {
+  border-radius:10px;
+}
+
+.servicediv::-webkit-scrollbar-thumb {
+  background:lightgray;
+  border-radius:10px;
+}
+.services{
+    display:flex;
+    overflow:hidden;
+    justify-content: space-between;
+    align-items: left;
+}
+.services h1 span{
+    background:linear-gradient(135deg,blueviolet,violet);
+    background-clip:text;
+    color:transparent;
+}
+.services p{
+    color:gray;
+}
+.services div{
+    width:100%;
+}
+.services .i{
+    font-size:xx-large;
+    color:black;
+}
+
+@media(max-width:750px){
+    .servicediv{
+        height:70vh;
+    }
+    .services{
+        flex-direction:column;
+        margin:4%;
+    }
+    .servicediv::-webkit-scrollbar{
+        display:none;
+    }
+}
+@media(max-width:450px){
+    .servicediv{
+        height:75vh;
+    }
 }

@@ -5,6 +5,7 @@ import Home from './Home.jsx'
 import About from './about.jsx'
 import Skill from './skill.jsx'
 import Service from './service.jsx'
+import Project from './project.jsx'
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
     }/>
     <Route path='/service' element={
       <Service/>
+    }/>
+    <Route path='/project' element={
+      <Project/>
     }/>
     </Routes>
     </div>

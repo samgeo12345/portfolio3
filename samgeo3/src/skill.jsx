@@ -59,7 +59,7 @@ function Skill() {
                     <h1><span>{exp.intern}</span> - {exp.company}</h1>
                     <p>{exp.date}</p>
                     <span className='place'>{exp.venue}</span><br />
-                    <a href={exp.page}><FontAwesomeIcon icon={faArrowUpRightFromSquare}/> visit</a>
+                    <a href={exp.page}><FontAwesomeIcon className='visiticon' icon={faArrowUpRightFromSquare}/> <span>visit</span></a>
                   </div>
                 </div>
                 ))}
