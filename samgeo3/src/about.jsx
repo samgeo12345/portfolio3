@@ -12,7 +12,7 @@ function About() {
   return (
     <>
     <section className="aboutsectiondiv">
-        <h1 className='abouthead'>About Me</h1>
+        <h2 className='abouthead'>About Me</h2>
         <div className="aboutdiv">
           <div className="aboutimgdiv">
           <img src={aboutimg} alt="" />

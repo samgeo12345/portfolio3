@@ -35,7 +35,7 @@
     justify-content: space-between;
     align-items: left;
 }
-.services h1 span{
+.services h2 span{
     background:linear-gradient(135deg,blueviolet,violet);
     background-clip:text;
     color:transparent;

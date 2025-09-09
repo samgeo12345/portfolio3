@@ -10,7 +10,7 @@ function Project() {
 
   return (
     <section className="projectsecdiv">
-        <h1 className='projecthead'>Projects made</h1>
+        <h2 className='projecthead'>Projects made</h2>
         <div className="projectdiv">
             <div className="projectholddiv">
             {portfolio.projects.map((pro)=>(

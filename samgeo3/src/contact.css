@@ -1,0 +1,39 @@
+.contactsecdiv{
+    margin:0% 6%;
+}
+.contacthead{
+    text-align:center;
+    color:lightgray;
+}
+.contactdiv{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:80vh;
+}
+.contactdetaildiv,.messagediv{
+    width:100%;
+}
+.messageform{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    gap:15px;
+    overflow:hidden;
+    height:80vh;
+    align-items: center;
+}
+.messageform input,.messageform textarea{
+    width:70%;
+    padding:3%;
+    background-color: whitesmoke;
+    border-radius:10px;
+}
+.messageform button{
+    width:76%;
+    padding:3%;
+    border-radius:10px;
+    font-size:15px;
+    color:white;
+    background:linear-gradient(135deg,blueviolet,violet);
+}

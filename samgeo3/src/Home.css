@@ -34,8 +34,11 @@
     margin-top:4%;
     border-radius:8px;
     background:linear-gradient(135deg,blueviolet,violet);
-    box-shadow:0px 0px 1px rgba(0,0,0,0.9);
     color:white;
+    transition:.3s ease;
+    &:hover{
+        box-shadow:0px 5px 5px rgba(0,0,0,0.5);
+    }
 }
 .introdiv .socialdiv{
     display:flex;
@@ -46,6 +49,10 @@
 .socialdiv .i{
     font-size:x-large;
     color:black;
+    transition:.3s ease;
+    &:hover{
+        font-size:xx-large;
+    }
 }
 .introimgdiv{
     height:100vh;

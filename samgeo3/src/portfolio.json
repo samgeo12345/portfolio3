@@ -32,57 +32,67 @@
     "skill":[
         {
             "id":1,
+            "techname":"HTML5",
             "icons":"html",
             "percentage":90,
-            "color":"orangered"
+            "color":"orangered",
+            "progress":"conic-gradient(blueviolet,violet 90%,lightgray 0%)"
         },
         {
             "id":2,
+            "techname":"CSS3",
             "icons":"css",
             "percentage":80,
-            "color":"dodgerblue"
+            "color":"dodgerblue",
+            "progress":"conic-gradient(blueviolet,violet 80%,lightgray 0%)"
         },
         {
             "id":3,
+            "techname":"JavaScript",
             "icons":"js",
             "percentage":65,
-            "color":"gold"
+            "color":"gold",
+            "progress":"conic-gradient(blueviolet,violet 65%,lightgray 0%)"
         },
         {
             "id":4,
+            "techname":"React",
             "icons":"react",
             "percentage":65,
-            "color":"deepskyblue"
+            "color":"deepskyblue",
+            "progress":"conic-gradient(blueviolet,violet 65%,lightgray 0%)"
         },
         {
             "id":5,
+            "techname":"Python",
             "icons":"python",
             "percentage":70,
-            "color":"blue"
+            "color":"blue",
+            "progress":"conic-gradient(blueviolet,violet 70%,lightgray 0%)"
         },
         {
             "id":6,
-            "icons":"react",
-            "percentage":65,
-            "color":"deepskyblue"
-        },
-        {
-            "id":7,
+            "techname":"Java",
             "icons":"java",
             "percentage":60,
-            "color":"orangered"
+            "color":"orangered",
+            "progress":"conic-gradient(blueviolet,violet 60%,lightgray 0%)"
         }
     ],
     "skillimg":[
         {
             "id":1,
+            "techname":"GIMP",
             "img":"./image copy 2.png",
-            "percentage":60
+            "percentage":60,
+            "progress":"conic-gradient(blueviolet,violet 60%,lightgray 0%)"
         },
         {
             "id":2,
+            "techname":"MongoDB",
             "img":"./image copy 3.png",
-            "percentage":0
+            "percentage":30,
+            "progress":"conic-gradient(blueviolet,violet 30%,lightgray 0%)"
         }
     ],
     "experience":[

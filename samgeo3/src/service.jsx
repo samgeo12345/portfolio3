@@ -15,13 +15,13 @@ function Service() {
 
   return (
     <section className="servicesectiondiv">
-        <h1 className="servicehead">Services Available</h1>
+        <h2 className="servicehead">Services Available</h2>
         <div className="servicediv">
           {portfolio.services.map((ser)=>(
           <div className="servicesetdiv">
           <div className="services">
             <div>
-            <h1><FontAwesomeIcon className='i' icon={iconMap[ser.icons]}/> <span>{ser.servicename}</span></h1>
+            <h2><FontAwesomeIcon className='i' icon={iconMap[ser.icons]}/> <span>{ser.servicename}</span></h2>
             </div>
             <div>
             <p>{ser.description}</p>

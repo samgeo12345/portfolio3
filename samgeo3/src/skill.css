@@ -53,8 +53,7 @@
 .skillexpcerdiv #skilldiv .skillss{
   position:relative;
   display: flex;
-  flex-direction: column;
-  justify-content:space-between;
+  justify-content:center;
   align-items: center;
   overflow:hidden;
   border-radius:10px;
@@ -63,17 +62,29 @@
 .skillss .i{
   font-size:50px;
 }
-.skillss span{
-  background:linear-gradient(135deg,blueviolet,violet);
-  background-clip:text;
-  color:transparent;
-  font-weight:bold;
+.circle{
+  right:4%;
+  bottom:6%;
+  position:absolute;
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.skillss hr{
-  margin-left:0;
-  margin-bottom:0;
-  border:4px solid;
-  border-image:linear-gradient(135deg,blueviolet,violet) 1;
+.inner{
+  width:30px;
+  height:30px;
+  border-radius:50%;
+  font-weight:bold;
+  background-color:white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inner p{
+  font-size:small;
 }
 
 #experiencediv{
@@ -106,7 +117,7 @@
   text-align:left;
   color:gray;
 }
-.srisclickcontentdiv h1{
+.srisclickcontentdiv h2{
   color:black;
 }
 .srisclickcontentdiv p{
@@ -120,7 +131,7 @@
   text-decoration: none;
   font-size:20px;
 }
-.srisclickcontentdiv h1 span,.srisclickcontentdiv a span
+.srisclickcontentdiv h2 span,.srisclickcontentdiv a span
 {
   color:transparent;
   background:linear-gradient(135deg,blueviolet,violet);

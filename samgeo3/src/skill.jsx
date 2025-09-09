@@ -20,7 +20,7 @@ function Skill() {
   return (
     <>
     <section className="skillsectiondiv">
-        <h1 className='skillhead'>Skills & Experiences</h1>
+        <h2 className='skillhead'>Skills & Experiences</h2>
         <div className="skillsetdiv">
           <div className="skillsetoptionsdiv">
             <button onClick={()=>setSkillOption("skills")} className={SkillOption==="skills" ? "skillswitch" : ""}>Skills</button>
@@ -32,18 +32,24 @@ function Skill() {
               <div id="skilldiv">
                 {portfolio.skill.map((skl)=>(
                 <div className="skillss">
-                  <h1></h1>
                   <FontAwesomeIcon className='i' style={{color:skl.color}} icon={iconMap[skl.icons]}/>
-                  <span>{skl.percentage}%</span>
-                  <hr style={{width:skl.percentage + "%"}} />
+                  <p>{skl.techname}</p>
+                  <div className="circle" style={{backgroundImage:skl.progress}}>
+                    <div className="inner">
+                      <p>{skl.percentage}</p>
+                    </div>
+                  </div>
                 </div>
                 ))}
                 {portfolio.skillimg.map((sklimg)=>(
                 <div className="skillss">
-                  <h1></h1>
                   <img className='gimpimg' src={sklimg.img} alt="" />
-                  <span>{sklimg.percentage}%</span>
-                  <hr style={{width:sklimg.percentage + "%"}} />
+                  <p>{sklimg.techname}</p>
+                  <div className="circle" style={{backgroundImage:sklimg.progress}}>
+                    <div className="inner">
+                     <p>{sklimg.percentage}</p>
+                    </div>
+                  </div>
                 </div>
                 ))}
               </div>
@@ -56,7 +62,7 @@ function Skill() {
                     <img src={exp.image} alt={exp.company} />
                   </div>
                   <div className="srisclickcontentdiv">
-                    <h1><span>{exp.intern}</span> - {exp.company}</h1>
+                    <h2><span>{exp.intern}</span> - {exp.company}</h2>
                     <p>{exp.date}</p>
                     <span className='place'>{exp.venue}</span><br />
                     <a href={exp.page}><FontAwesomeIcon className='visiticon' icon={faArrowUpRightFromSquare}/> <span>visit</span></a>
