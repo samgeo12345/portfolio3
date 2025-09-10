@@ -9,7 +9,60 @@
     display:flex;
     justify-content: center;
     align-items: center;
+    overflow:hidden;
     height:80vh;
+}
+.contactdetaildiv{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-direction:column;
+    align-items:center;
+}
+.contactdetaildiv .conname{
+    width:90%;
+    margin:auto;
+    display:flex;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(135deg,white,whitesmoke);
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    box-shadow:inset 0px 0px 1px rgba(0,0,0,0.9);
+    border-radius:10px;
+}
+.conname h3{
+    background:linear-gradient(135deg,blueviolet,violet);
+    background-clip:text;
+    color:transparent;
+}
+.conname img{
+    block-size:20px;
+}
+.email p,.phoneno p,.address p{
+    margin-left:5%;
+    font-weight:bold;
+}
+.email,.phoneno,.address{
+    background-color:whitesmoke;
+    width:90%;
+    margin:auto;
+    display:flex;
+    border-radius:50px;
+    overflow:hidden;
+    height:10vh;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.email button,.phoneno button,.address button{
+    color:white;
+    height:10vh;
+    width:10vh;
+    background:linear-gradient(135deg,blueviolet,violet);
+    border-radius:50px;
 }
 .contactdetaildiv,.messagediv{
     width:100%;
@@ -36,4 +89,53 @@
     font-size:15px;
     color:white;
     background:linear-gradient(135deg,blueviolet,violet);
+}
+
+
+@media(max-width:800px){
+    .contactdetaildiv .conname,.email,.phoneno,.address{
+        width:100%;
+    }
+}
+@media(max-width:750px){
+    .contactdiv{
+        justify-content: center;
+        flex-direction: column;
+        gap:30px;
+        overflow-y: scroll;
+        height:75vh;
+    }
+    .contactdiv::-webkit-scrollbar{
+        display:none;
+    }
+    .contactdetaildiv{
+        height:100vh;
+        margin-top:50%;
+    }
+    .messageform{
+        height:50vh;
+        margin-bottom:10%;
+    }
+    .messageform input,.messageform textarea{
+        width:90%;
+        padding:5%;
+        font-size:16px;
+    }
+    .messageform button{
+        width:100%;
+        padding:5%;
+        font-size:20px;
+    }
+}
+@media(max-width:450px){
+    .contactdiv{
+        height:80vh;
+    }
+    .contactdetaildiv .conname,.email,.phoneno,.address{
+        height:8vh;
+    }
+    .email button,.phoneno button,.address button{
+        height:8vh;
+        width:8vh;
+    }
 }
