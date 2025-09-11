@@ -1,4 +1,5 @@
-import React from 'react'
+import React,{useRef} from 'react'
+import emailjs from 'emailjs-com'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleChevronRight, faEnvelope, faLandmark, faLocation, faLocationDot, faPaperPlane, faPhone, faUser } from '@fortawesome/free-solid-svg-icons'
 import {  } from '@fortawesome/free-brands-svg-icons'
@@ -6,6 +7,28 @@ import logo from './assets/Untitled-removebg-preview (1).png'
 import './contact.css'
 
 function Contact() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_fb5eoec",   // 🔹 from EmailJS dashboard
+        "template_uun987u",  // 🔹 your template
+        form.current,
+        "bUCdhwi91mW38HpNw"    // 🔹 your public key
+      )
+      .then(
+        () => {
+          alert("Message sent successfully!");
+          form.current.reset(); // clear form after send
+        },
+        (error) => {
+          alert("Failed to send message: " + error.text);
+        }
+      );
+  };
   return (
     <section className="contactsecdiv">
         <h2 className="contacthead">Contact Details</h2>
@@ -29,11 +52,11 @@ function Contact() {
             </div>
           </div>
           <div className="messagediv">
-            <form action="">
+            <form ref={form} onSubmit={sendEmail}>
               <div className="messageform">
-                <input type="text" placeholder='Name' required/>
-                <input type="email" placeholder='Email' required/>
-                <textarea rows={5} name="" id="" placeholder='Your message' required></textarea>
+                <input type="text" name='from_name' placeholder='Name' required/>
+                <input type="email" name='from_email' placeholder='Email' required/>
+                <textarea rows={5} name="message" id="" placeholder='Your message' required></textarea>
                 <button type='submit'>Send message <FontAwesomeIcon icon={faPaperPlane}/></button>
               </div>
             </form>
